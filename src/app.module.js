@@ -10,8 +10,7 @@ const moduleName = 'app';
 
 // dependencies should be always module
 const dependencies = [
-    uiRouter,
-    CommonModuleName
+    uiRouter
 ];
 
 const module = angular.module(moduleName, dependencies)

@@ -9,9 +9,18 @@
 </head>
 
 <body ng-app="app">
-    <main></main>
-    <test-component></test-component>
-    <common-main></common-main>
+    <!-- not ng-rout, 
+        ui-router to support lazy loading
+        routing should be implemented before app instantiate
+    -->
+    <div>
+        <a ui-sref="main({})">Main</a>
+        <a ui-sref="test">Test</a>
+    </div>
+    <ui-view>
+    </ui-view>
+
+
 </body>
 
 </html>
